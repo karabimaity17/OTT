@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hotstar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".EditProfile"
+            android:label="@string/title_activity_edit_profile"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ViewAll"
+            android:label="@string/title_activity_view_all"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComingSoon"
+            android:label="@string/title_activity_coming_soon"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChooseLanguage"
+            android:label="@string/title_activity_choose_language"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".VerifyOtp" />
+        <activity android:name=".WelcomeActivity" />
+        <activity
+            android:name=".Downloads"
+            android:label="@string/title_activity_downloads"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllLanguage"
+            android:label="@string/title_activity_all_language"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MembershipPlan"
+            android:label="@string/title_activity_membership_plan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Settings"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SingleViewPage"
+            android:label="@string/title_activity_single_view_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AllGenre"
+            android:label="@string/title_activity_all_genre"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GenreActivity"
+            android:label="@string/title_activity_genre"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".Edition_Choice"
+            android:label="@string/title_activity_edition__choice"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Subscription"
+            android:label="@string/title_activity_subscription"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Watch_List"
+            android:label="@string/title_activity_watch__list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Favourite_List"
+            android:label="@string/title_activity_favourite__list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Single_Page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Rotate_Video"
+            android:label="@string/title_activity_rotate__video"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+    </application>
+
+</manifest>

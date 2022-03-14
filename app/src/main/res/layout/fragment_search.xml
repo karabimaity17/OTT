@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/box"
+                >
+
+                <ImageView
+                    android:id="@+id/search_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/search" />
+                <AutoCompleteTextView
+                    android:id="@+id/edit_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/search_img"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionSearch"
+                    android:layout_centerVertical="true"
+                    android:inputType="textAutoComplete|textAutoCorrect"
+                    android:lines="1"
+                    android:completionThreshold="1"
+                    android:theme="@style/Theme.AppCompat.Light"
+                    android:hint="Search Movies &amp; Web Series"
+                    android:textColorHint="@color/white"
+                    android:background="@null"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    />
+                <ImageView
+                    android:id="@+id/clear"
+                    android:layout_width="@dimen/_17sdp"
+                    android:layout_height="@dimen/_17sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginHorizontal="@dimen/_8sdp"
+                    android:tint="#777777"
+                    android:visibility="gone"
+                    android:src="@drawable/close" />
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recycler_all_search"
+                android:visibility="visible"
+                tools:listitem="@layout/single_search">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/_160sdp"
+        android:layout_height="@dimen/_100sdp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardCornerRadius="@dimen/_4sdp"
+        android:background="#FEFEFE"
+        android:layout_margin="@dimen/_5sdp"
+        android:touchscreenBlocksFocus="true"
+        >
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/serie1_1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="40 min"
+        android:layout_alignParentRight="true"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_margin="@dimen/_5sdp"
+        android:textColor="@color/white"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:background="@drawable/gradiant2"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/_5sdp">
+        <ImageView
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:src="@drawable/play_arrow"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/lin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="S1 E1"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"/>
+                <View
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:background="@drawable/bullet"
+                    android:backgroundTint="@color/white"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="27 Aug"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/watch_movie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Watch Movie"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not the King but the kingman"
+                android:textSize="11sp"
+                android:textStyle="normal"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:lines="2"
+        android:text="After king Ferghana Umar Shaikhs death,young Babur assume responsibility for an entire kingdom."
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:textSize="13sp"
+        />
+
+    <TextView
+        android:id="@+id/download_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/download2"
+        android:text="Download"
+        android:visibility="gone"
+        android:drawablePadding="@dimen/_5sdp"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        android:backgroundTint="@color/dark_grey"
+        android:layout_margin="@dimen/_5sdp"/>
+
+
+
+</LinearLayout>

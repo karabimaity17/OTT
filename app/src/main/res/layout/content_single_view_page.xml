@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp">
+                <ImageView
+                    android:id="@+id/main_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/movie1_1" />
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="bottom"
+                    android:background="@drawable/gradiant2"
+                    android:layout_alignParentBottom="true"
+                    android:padding="@dimen/_10sdp">
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/video_play"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="@dimen/_5sdp">
+                        <TextView
+                            android:id="@+id/txt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Watch Movie"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="2 hr 25 min"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            android:textColor="#B3B2B3"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/gradiant2"
+                android:layout_alignParentBottom="true"
+                android:padding="@dimen/_10sdp">
+                <ImageView
+
+                    android:id="@+id/img2"
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_65sdp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/movie1"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/_5sdp">
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bell Bottom"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"/>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hindi"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            android:textColor="#B3B2B3"/>
+
+                        <View
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_18sdp"
+                           android:background="@drawable/bullet"
+
+                            android:backgroundTint="#B3B2B3"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Action"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            android:textColor="#B3B2B3"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2020"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            android:textColor="#B3B2B3"/>
+
+                        <View
+                            android:layout_width="@dimen/_10sdp"
+                            android:layout_height="@dimen/_18sdp"
+                           android:background="@drawable/bullet"
+
+                            android:backgroundTint="#B3B2B3"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="U/A 13+"
+                            android:textSize="14sp"
+                            android:textStyle="normal"
+                            android:textColor="#B3B2B3"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.borjabravo.readmoretextview.ReadMoreTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The story of the film revolves around the hijacking of Indian Airlines flight IC 691 that takes off from Delhi on August 24, 1984. This was fifth Indian Airlines plane hijacking in last seven years. The hijacking occurred during the administration of former Indian Prime Minister, Indira Gandhi (Lara Dutta)
+While the Prime Minister Gandhi plans to let the Pakistani government negotiate with the four hijackers (when the plane has landed in Lahore), under-cover RAW agent, Anshul Malhotra (Akshay Kumar), code-named Bell Bottom, has a different plan in his mind. He wants to not only rescue 210 passengers but also arrest the hijackers. The rest of story revolves around this covert mission to save passengers of IC 691 in Dubai."
+                android:textColor="@color/white"
+                app:trimCollapsedText="More"
+                app:trimExpandedText="Less"
+                app:showTrimExpandedText="true"
+                app:trimLines="3"
+                app:trimLength="100"
+                android:maxLines="5"
+                android:textSize="13sp"
+                android:ellipsize="end"
+                android:layout_margin="@dimen/_10sdp"
+                android:letterSpacing="0.1"
+                app:colorClickableText="@color/colorAccent"
+                app:trimMode="trimModeLine"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:text="Starring Akshay Kumar,Vani Kapoor"
+                android:layout_marginHorizontal="@dimen/_10sdp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/_10sdp">
+
+                <Button
+                    android:id="@+id/rating"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:backgroundTint="@color/dark_grey"
+                    android:drawableLeft="@drawable/rate"
+                    android:text="Rate"
+                    android:textAllCaps="false"
+                    android:layout_marginRight="@dimen/_10sdp"/>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:drawableLeft="@drawable/share"
+                    android:text="Share"
+                    android:backgroundTint="@color/dark_grey"
+                    android:textAllCaps="false"
+                   />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txt_series"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="Season 1"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_episodes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="5"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/custom_episodes"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                android:text="Trailers &amp; Extras"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_trailer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="2"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/_10sdp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/custom_trailers"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_10sdp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="More Like This"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"/>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rightarrow"
+                    android:layout_alignParentRight="true"
+                    android:backgroundTint="@color/white"
+                    />
+
+
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_more"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:itemCount="5"
+                android:orientation="horizontal"
+                android:layout_marginHorizontal="@dimen/_10sdp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                tools:listitem="@layout/custom_page"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

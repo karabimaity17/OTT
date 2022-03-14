@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+
+        <item
+            android:id="@+id/ad"
+            android:title="Advertisementview" />
+
+        <item
+            android:id="@+id/fav"
+            android:title="Favourites" />
+
+        <item
+            android:id="@+id/watch"
+            android:title="Watchlist" />
+
+
+        <item
+            android:id="@+id/income"
+            android:title="Income" />
+
+        <item
+            android:id="@+id/editor"
+            android:title="Editor Choice" />
+
+        <item
+            android:id="@+id/subscription"
+            android:title="Subscription" />
+
+
+        <item
+            android:id="@+id/help"
+            android:title="Help Center" />
+
+
+
+    </group>
+
+
+</menu>

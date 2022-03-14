@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="@dimen/_100sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_4sdp"
+    android:background="#FEFEFE"
+    app:cardUseCompatPadding="true"
+    android:touchscreenBlocksFocus="true"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/one" />
+<TextView
+    android:id="@+id/genre_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiant2"
+    android:textColor="@color/white"
+    android:text="Romance"
+    android:textAllCaps="true"
+    android:gravity="bottom|center"
+    android:padding="@dimen/_5sdp"
+    android:textStyle="bold"
+    android:textSize="16sp"/>
+</RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_145sdp"
+    android:layout_height="@dimen/_90sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_4sdp"
+    app:cardBackgroundColor="@color/dark_grey"
+    app:cardUseCompatPadding="true"
+    android:touchscreenBlocksFocus="true"
+    >
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/fav_img"
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:src="@drawable/unfav"
+            android:layout_margin="@dimen/_5sdp"/>
+        <TextView
+            android:id="@+id/lang_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="English"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/_10sdp"/>
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/english_3"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/_5sdp"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_96sdp"
+    android:layout_height="wrap_content"
+
+    android:layout_margin="@dimen/_3sdp"
+    >
+
+    <LinearLayout
+        android:id="@+id/lin"
+        android:layout_width="@dimen/_92sdp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/box"
+        android:paddingHorizontal="@dimen/_5sdp"
+        android:layout_marginVertical="@dimen/_3sdp"
+        >
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Basic"
+            android:textSize="14sp"
+            android:layout_marginVertical="@dimen/_2sdp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" ₹"
+                android:gravity="top"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="499"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/validity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" /Year"
+            android:gravity="bottom"
+            android:layout_margin="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/checked_btn"
+        android:visibility="gone"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/checked"
+        android:layout_alignParentRight="true"/>
+   </RelativeLayout>

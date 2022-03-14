@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+
+
+       <!-- <item
+            android:id="@+id/download"
+            android:title="Downloads"
+            android:icon="@drawable/download2" />
+
+        <item
+            android:id="@+id/watch"
+            android:title="Watchlist"
+            android:icon="@drawable/watchlist"/>-->
+
+
+        <item
+            android:id="@+id/lang"
+            android:title="Language"
+            android:icon="@drawable/ic_baseline_language_24"/>
+
+        <item
+            android:id="@+id/genre"
+            android:title="Genre"
+            android:icon="@drawable/genre"/>
+        <item
+            android:id="@+id/membership_btn"
+            android:title="Membership"
+            android:icon="@drawable/ic_baseline_subscriptions_24"/>
+
+       <!-- <item
+            android:id="@+id/preference"
+            android:title="Preference"
+            android:icon="@drawable/settings"/>-->
+
+
+
+        <item
+            android:id="@+id/contact"
+            android:title="Contact Us"
+            android:icon="@drawable/contact_us"/>
+
+        <item
+            android:id="@+id/terms"
+            android:title="Terms &amp; Conditions"
+            android:icon="@drawable/terms"/>
+
+        <item
+            android:id="@+id/privacy"
+            android:title="Privacy Policy"
+            android:icon="@drawable/privacy"/>
+        <item
+            android:id="@+id/rate"
+            android:title="Rate us"
+            android:icon="@drawable/rate"/>
+        <item
+            android:id="@+id/about"
+            android:title="About &amp; Legal"
+            android:icon="@drawable/about"/>
+
+        <item
+            android:id="@+id/help"
+            android:title="Help Center"
+            android:icon="@drawable/help"/>
+
+
+
+    </group>
+
+
+</menu>
